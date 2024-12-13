@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Learning Platform</h1>
+        <p>Choose your course and make payment via M-Pesa</p>
+    </header>
+
+    <section>
+        <h2>Available Courses</h2>
+        <ul>
+            <li>Course 1: KES 100</li>
+            <li>Course 2: KES 100</li>
+            <li>Weekend Homework: KES 50</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Payment</h2>
+        <form id="paymentForm">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter M-Pesa phone number" required>
+            
+            <label for="amount">Amount (KES):</label>
+            <input type="number" id="amount" name="amount" required min="1" placeholder="Enter amount to pay">
+
+            <button type="submit">Pay Now</button>
+        </form>
+        <p id="paymentMessage"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
